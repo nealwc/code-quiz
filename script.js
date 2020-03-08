@@ -24,9 +24,9 @@ var firstAnswerSet = ["Arby's", "McDonald's", "Wendy's", "Burger Queen"]
 
 $("#start-button").on("click", function() {
  $("#start-button").remove(); 
- $("#question").append($(`<h3>${questionOne}</h3>`));
- for (i = 0; i < answers.length; i++) {
- $("#options").append($(`<p>${answers[i]}</p>`))
+ $("#question").append($(`<h3>${firstQuestion}</h3>`));
+ for (i = 0; i < firstAnswerSet.length; i++) {
+ $("#options").append($(`<p>${firstAnswerSet[i]}</p>`))
  };
 }
 );
